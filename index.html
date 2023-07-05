@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=""UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title> Simran Portfolio </title> 
+        <link rel="stylesheet" href="style.css"> 
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+      </head>
+  <body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <p> Programmer || Data Scientist </p>
+            <h1>Hi, I'm <span>Simran</span><br>Sahu From Odisha</h1>
+          </div>
+        </div> 
+      </div>
+
+<!-----------------------about------------------------------>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        
+        <img src="IMG_6597 (2).HEIC" width="400" height="400">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>In the phase of ups and downs, I always eager to find the right paths which
+          can stepped-up ourselves.Failure is not just a impact of some action for me, 
+          it's a lesson which makes me to enhance myself from it.
+          I am Simran Sahu from Sonepur, Odisha and currently I am persuing my Bachelor's
+          degree from GIET University, Gunupur, Odisha. I am a self-taught programmer who 
+          knows how to handle the challenges and enthusiastic learner who's constantly working
+          to learn new things and improve mt Skills to be the best version of myself.
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('hobbies and interests')">Hobbies And Interests</p>
+          </div>
+            <div class="tab-contents active-tab" id="skills">
+               <ul>
+                <li><span>Programming Languages</span><br>Java , Python , C</li>
+                <li><span>OS knows</span><br>Windows , Ubuntu , Linux</li>
+                <li><span>Database</span><br>MySQL</li>
+                <li><span>Microsoft Office Application</span></li>
+                <li><span>Android Development</span></li>
+                <li><span>Web Development</span></li>
+                <li><span>Soft-Skills</span><br>Adaptability<br>Working Under Pressure</li>
+               </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+               <li><span>2020 - Current</span><br>Bachelor of Technology, Computer Science and Engineering at GIET University,Gunupur</li>
+               <li><span>2018 - 2020</span><br>Higher Secondary Education From KIIT,Bhubaneswar</li>
+              </ul>
+           </div>
+           <div class="tab-contents" id="hobbies and interests">
+            <ul>
+             <li><span>Like to do drawing/sketching in my free time.</span><br></li>
+             <li><span>Interested on new Technology</span></li>
+             <li><span>Like to play board games with other people like chess.</span></li>
+            </ul>
+         </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--------------------------projects----------------------------------->
+
+<div id="projects">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="projects-list">
+        <div>
+          
+            <h2> Web Design</h2>
+            <p>fhoeiwvn  ropw ujhb2uoyhlnkvlqief0vjo
+              vjgorjwn kfjiwin fnwjl
+            </p>
+            <a href="#"> Learn more</a>
+        </div>
+        <div>
+        
+          <h2> Web Design</h2>
+          <p>fhoeiwvn  ropw ujhb2uoyhlnkvlqief0v
+            hfmfiow fhvnlwiunjv w4iwfjo</p>
+          <a href="#"> Learn more</a>
+      </div>
+      <div>
+        
+        <h2> Web Design</h2>
+        <p>fhoeiwvn  ropw ujhb2uoyhlnkvlqief0vj
+          frn2nrjk2uroi2nlfi8o3rn ifiiohblo</p>
+        <a href="#"> Learn more</a>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<!-----------------------------------contact-------------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>  simransahu148@gmail.com</p>
+        <p> <i class="fas fa-phone-square-alt"></i> 47204819-0187187</p>
+        <div class="social-icons">
+          <a href="www.linkedin.com/in/simran-sahu-31a06b212"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Simu0987"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/_i.simran_/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="20CSE079_Simran Sahu.docx" download class="btn btn2">Download CV</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>2023 ©All Rights Reserved Build with ♡ by Simran.<b>Say Hello</b></p>
+  </div>
+</div>
+
+
+
+
+
+<script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementsById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px"
+    }
+</script>
+  </body>
+</html>
